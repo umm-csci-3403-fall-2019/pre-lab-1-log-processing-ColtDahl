@@ -1,6 +1,4 @@
 filename=$1
-prefixhf=$1
+prefixhf=$2
 output=$3
-echo $prefixhf"_header.html"
-echo $prefixhf"_footer.html"
-cat $filename $prefixhf"_header" $prefixhf"_footer" > $3
+cat $prefixhf"_header.html" $filename $prefixhf"_footer.html" > $3
